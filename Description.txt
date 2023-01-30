@@ -1,0 +1,22 @@
+Visma Solutions - programming task
+
+I understanded that the task was to make a class which gets uri as a parameter.
+This uri needs to be sliced up to "smaller" parts to schema, path and parameters.
+Class needs to validate these parts, only acceptable schema is "visma-identity" 
+and acceptable paths are "login", "confirm" or "sign". These different paths have
+different parameters: login (source), confirm (source and payment number) and 
+sign (source and documentid). Also these parameters has to be validated.
+Class returns path and parameters as key value pairs.
+
+Task description didn't have any restrictions of using libraries, so I used 
+Java.net.URI -class to parse input uri. Description didn't take stand which data 
+structures you should you use, so I used Hashmap to store key value
+pairs and Arraylist to return path and parameters. Not sure if that was mented.
+Also I was little uncertain about client implementation. My solution was to make another
+simple class which calls another class and gives uri- requests as parameter.
+
+My implementation doesn't do much if validate fails, so this could be improved. However 
+task description didn't descripbe what this class should do if one of uri parts 
+is wrong. In addition I am wondering if parameter types should be also validated, so
+this could possibly be improved too. Also my validation has many if-else statements, 
+this could maybe be improved but at this time this was simplest solution I came up with.
