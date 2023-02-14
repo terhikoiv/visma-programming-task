@@ -1,4 +1,4 @@
-# visma-programming-task
+# programming-task
 Solution to given programming task
 
 Task:
